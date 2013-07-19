@@ -1,10 +1,11 @@
 # Lazy Form Fuzz
-A bookmarklet for filling HTML forms with random data.
+A bookmarklet for filling HTML forms with random data. 
+Data is generated from regular expressions, using [RandExp](https://github.com/fent/randexp.js).
 
 ## Browser Support
 IE 8+, Firefox, Chrome, Opera (Presto and Blink), and Safari
 
-Supports single page and framed forms.
+Supports single page and framed (iframes and framesets) forms.
 
 ## Form element support for autofilling
 ### Input Types
@@ -40,8 +41,5 @@ Supports single page and framed forms.
 * readonly
 * disabled
 
-
-
-
-
-
+## Custom Generation rules
+LazyFormFuzz respects the pattern attribute on input elements, and will use it over built-in rules. 
