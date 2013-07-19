@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<style type="text/css">
+		body {text-align:center}
+		fieldset {width:auto; display:inline-block; vertical-align:top; text-align:left}
+		label {vertical-align:top}
+	</style>
+</head>
+<body>
+	<h1>Form Filler/Fuzzer Frame Test</h1>
+	<form action="inner_form.html" method="get" id="html5_form2">
+	<fieldset>
+		<legend>HTML5 Miscellaneous Input Types</legend>
+		<label>Color (Hex Format)  <input type="color" name="color2" /></label><br />
+		<label>Email  <input type="email" name="email2"/></label><br />
+		<label>Number  <input type="number" min="0" max="100" step="5" name="number2" /></label><br />
+		<label>Range  <input type="range" min="0" max="250" step="10" name="range2" value="30" /></label><br />
+		<label>Search  <input type="search" name="search2" /></label><br />
+		<label>Tel  <input type="tel" name="tel2" /></label><br />
+		<label>URL  <input type="url" name="url2" /></label>
+	</fieldset>
+	<fieldset>
+		<legend>HTML5 Date/Time Input Types</legend>
+		<label>Date  <input type="date" name="date2" /></label><br />
+		<label>Date Time  <input type="datetime" name="datetime2" /></label><br />
+		<label>Date Time Local  <input type="datetime-local" name="datetime-local2" /></label><br />
+		<label>Month  <input type="month" name="month2"/></label><br />
+		<label>Week  <input type="week" name="week2"/></label><br />
+		<label>Time  <input type="time" name="tim2e"/></label>
+	</fieldset>
+	<fieldset>
+		<legend>Traditional Form Elements</legend>
+		<label>Select
+		<select name="select2">
+			<option value="0">Option 0</option>
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+		</select>
+		</label><br />
+		<label>Select with optgroup
+		<select name="select_op2t">
+			<option value="1">Option 1</option>
+			<option value="2">Option 2</option>
+			<optgroup label="foo.foo">
+				<option value="foo1">Foo 1</option>
+				<option value="foo2">Foo 2</option>
+			</optgroup>
+			<optgroup label="bar">
+				<option value="3">Option 3</option>
+				<option value="4">Option 4</option>
+			</optgroup>
+		</select>
+		</label><br />
+		<label>Select with Multiple attribute
+		<select name="multiple2" multiple="multiple">
+			<option>Foo</option>
+			<option>Bar</option>
+			<option>Baz</option>
+		</select>
+		</label><br />
+		<label>Textarea
+			<textarea rows="10" cols="40" name="textarea2"></textarea>
+		</label>
+	</fieldset>
+	<fieldset>
+		<legend>Traditional Input Types</legend>
+		<label>Checkbox </label><br />
+		<input type="checkbox" name="check2" id="checkbox1" value="checked"/>
+		<input type="checkbox" name="check2" id="checkbox2" value="checked"/>
+		<input type="checkbox" name="check2" id="checkbox3" value="checked"/>
+		<br/>
+		<input type="checkbox" name="check2" id="checkbox4" value="checked"/>
+		<input type="checkbox" name="check2" id="checkbox5" value="checked"/>
+		<input type="checkbox" name="check2" id="checkbox6" value="checked"/>
+		<br />
+		<input type="checkbox" name="check2" id="checkbox7" value="checked"/>
+		<input type="checkbox" name="check2" id="checkbox8" value="checked"/>
+		<input type="checkbox" name="check2" id="checkbox9" value="checked"/>
+		<br />
+        <label>Hidden (not html5 hidden attribute)<input type="hidden" id="hidden_input" name="hidden_input" value="hidden value" /></label><br />
+        <label>Password <input type="password" name="password" /></label><br />
+        <label>Option 1: <input type="radio" name="rad2" id="radio12" value="1" /></label><br />
+		<label>Option 2: <input type="radio" name="rad2" id="radio22" value="2" /></label><br />
+		<label>Option 3: <input type="radio" name="rad2" id="radio32" value="3" disabled="disabled" /></label><br />
+		<label>Option 4: <input type="radio" name="rad2" id="radio42" value="4" /></label><br />
+		<label>Option 5: <input type="radio" name="rad2" id="radio52" value="5" /></label><br />
+		<label>Option 7: <input type="radio" name="rad2" id="radio72" value="7" />
+		</label><br />
+        <label>Readonly <input type="text" readonly="readonly" name="readonly2" value="Readonly" /></label><br />
+        <input type="reset" value="Reset" name="reset2" /><br />
+        <input type="submit" value="submit" name="submit2" form="html5_form" /><br />
+        <label>Text  <input type="text" name="text2" /></label><br />
+	</fieldset>
+	</form>
+</body>
+</html>

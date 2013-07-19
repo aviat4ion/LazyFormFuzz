@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+	<style type="text/css">
+    	body {
+			text-align:center;
+    	}
+
+		fieldset, iframe {
+			display:inline-block;
+			vertical-align:top;
+			text-align:left;
+		}
+
+		iframe {
+			width:90%;
+			margin:0 auto;
+			min-height:500px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Form Filler/Fuzzer Test</h1>
+	<iframe src="inner_form.html"></iframe>
+	<form action="test_form.html" method="get" id="html5_form">
+	<fieldset>
+		<legend>HTML5 Miscellaneous Input Types</legend>
+		<dl>
+			<dt><label for="color">Color (Hex Format)</label></dt>
+			<dd><input type="color" name="color" /></dd>
+
+			<dt><label for="email">Email</label></dt>
+			<dd><input type="email" name="email"/></dd>
+
+			<dt><label for="number">Number</label></dt>
+			<dd><input type="number" min="0" max="100" step="5" name="number" /></dd>
+
+			<dt><label for="range">Range</label></dt>
+			<dd><input type="range" min="0" max="250" step="10" name="range" value="30" /></dd>
+
+			<dt><label for="search">Search</label></dt>
+			<dd><input type="search" name="search" /></dd>
+
+			<dt><label for="tel">Tel</label></dt>
+			<dd><input type="tel" name="tel" /></dd>
+
+			<dt><label for="url">URL</label></dt>
+			<dd><input type="url" name="url" /></dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>HTML5 Date/Time Input Types</legend>
+		<dl>
+			<dt><label for="date">Date</label></dt>
+			<dd><input type="date" name="date" /></dd>
+
+			<dt><label for="datetime">Date Time</label></dt>
+			<dd><input type="datetime" name="datetime" /></dd>
+
+			<dt><label for="datetime-local">Date Time Local</label></dt>
+			<dd><input type="datetime-local" name="datetime-local" /></dd>
+
+			<dt><label for="month">Month</label></dt>
+			<dd><input type="month" name="month"/></dd>
+
+			<dt><label for="week">Week</label></dt>
+			<dd><input type="week" name="week"/></dd>
+
+			<dt><label for="time">Time</label></dt>
+			<dd><input type="time" name="time"/></dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>Traditional Form Elements</legend>
+		<dl>
+			<dt><label for="select">Select</label></dt>
+			<dd>
+				<select id="select" name="select">
+					<option value="0">Option 0</option>
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+				</select>
+			</dd>
+
+			<dt><label for="select_opt">Select with optgroup</label></dt>
+			<dd>
+				<select id="select_opt" name="select_opt">
+					<option value="1">Option 1</option>
+					<option value="2">Option 2</option>
+					<optgroup label="foo.foo">
+						<option value="foo1">Foo 1</option>
+						<option value="foo2">Foo 2</option>
+					</optgroup>
+					<optgroup label="bar">
+						<option value="3">Option 3</option>
+						<option value="4">Option 4</option>
+					</optgroup>
+				</select>
+			</dd>
+
+			<dt><label for="multiple">Select with Multiple attribute</label></dt>
+			<dd>
+				<select id="multiple" name="multiple" multiple="multiple">
+					<option>Foo</option>
+					<option>Bar</option>
+					<option>Baz</option>
+				</select>
+			</dd>
+
+			<dt><label for="textarea">Textarea</label></dt>
+			<dd>
+				<textarea rows="10" cols="40" id="textarea" name="textarea"></textarea>
+			</dd>
+		</dl>
+	</fieldset>
+	<fieldset>
+		<legend>Traditional Input Types</legend>
+		<dl>
+			<dt><label for="checkbox">Checkbox</label></dt>
+			<dd>
+				<input type="checkbox" name="check" id="checkbox1" value="checked"/>
+				<input type="checkbox" name="check" id="checkbox2" value="checked"/>
+				<input type="checkbox" name="check" id="checkbox3" value="checked"/>
+				<br/>
+				<input type="checkbox" name="check" id="checkbox4" value="checked"/>
+				<input type="checkbox" name="check" id="checkbox5" value="checked"/>
+				<input type="checkbox" name="check" id="checkbox6" value="checked"/>
+				<br />
+				<input type="checkbox" name="check" id="checkbox7" value="checked"/>
+				<input type="checkbox" name="check" id="checkbox8" value="checked"/>
+				<input type="checkbox" name="check" id="checkbox9" value="checked"/>
+			</dd>
+
+			<dt><label for="hidden_input">Hidden (not html5 hidden attribute)</label></dt>
+			<dd><input type="hidden" id="hidden_input" name="hidden_input" value="hidden value" /></dd>
+
+			<dt><label for="password">Password</label></dt>
+			<dd><input type="password" name="password" /></dd>
+
+			<dt>Radio</dt>
+			<dd>
+				<label for="radio1">Option 1:</label>
+				<input type="radio" name="rad" id="radio1" value="1" />
+				<br />
+				<label for="radio2">Option 2:</label>
+				<input type="radio" name="rad" id="radio2" value="2" />
+				<br />
+				<label for="radio3">Option 3:</label>
+				<input type="radio" name="rad" id="radio3" value="3" disabled="disabled" />
+				<br />
+				<label for="radio2">Option 4:</label>
+				<input type="radio" name="rad" id="radio2" value="4" />
+				<br />
+				<label for="radio2">Option 5:</label>
+				<input type="radio" name="rad" id="radio2" value="5" readonly="readonly" />
+				<br />
+				<label for="radio2">Option 7:</label>
+				<input type="radio" name="rad" id="radio2" value="7" />
+
+			</dd>
+
+			<dt><label for="readonly">Readonly</label></dt>
+			<dd><input type="text" readonly="readonly" name="readonly" value="Readonly" /></dd>
+
+			<dt><label for="reset">Reset</label></dt>
+			<dd><input type="reset" value="Reset" name="reset" /></dd>
+
+			<dt><label for="submit">Submit</label></dt>
+			<dd><input type="submit" value="submit" name="submit" form="html5_form" /></dd>
+
+			<dt><label for="text">Text</label></dt>
+			<dd><input type="text" name="text" /></dd>
+		</dl>
+	</fieldset>
+	</form>
+	<script type="text/javascript">
+		function DST(src)
+		{
+			var s = document.createElement('script');
+			s.src = src;
+			s.async = false;
+			document.querySelector('body').appendChild(s);
+		}
+	
+		document.querySelector('iframe').onload = function() {
+			DST('../src/randexp.min.js');
+			DST('../src/LazyFormFuzz-src.js');
+		};
+	</script>
+</body>
+</html>
