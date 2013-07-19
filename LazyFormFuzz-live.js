@@ -1,1 +1,1 @@
-javascript:(function(b){var a=document.createElement("script");a.src="//github.timshomepage.net/LazyFormFuzz/LazyFormFuzz.js";a.async=!1;document.getElementsByTagName("head")[0].appendChild(a)})();
+javascript:(function(b){var a=document.createElement("script");a.src="//github.com/aviat4ion/LazyFormFuzz/blob/master/LazyFormFuzz.js";a.async=!1;document.getElementsByTagName("head")[0].appendChild(a)})();
