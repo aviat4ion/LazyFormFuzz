@@ -21,7 +21,7 @@
 		email:				/[a-z0-9._+\-]{1,20}@[a-z0-9]{3,15}\.[a-z]{2,4}/i,
 		url:				/^(https?:\/\/)([a-z\.\-]+)\.([a-z\.]{2,6})\/?$/,
 		sql:				/[a-z0-9"'`\-]{5,17}/,
-		text:				/[\x20-\x7E]{10,15}/, // Visible ASCII character range
+		text:				/[a-zA-Z0-9_-]+/, // Visible ASCII character range
 		color:				/^\#[0-9a-f]{6}$/i,
 		tel:				/[0-9+\-]{7,15}/,
 		alphanumeric:		/[A-Z][0-9]+/i,
