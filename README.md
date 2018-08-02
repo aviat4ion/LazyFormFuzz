@@ -5,7 +5,7 @@ Data is generated from regular expressions, using [RandExp](https://github.com/f
 ## Browser Support
 IE 8+, Firefox, Chrome, Opera (Presto and Blink), and Safari
 
-Supports single page and framed (iframes and framesets) forms.
+Supports single page and framed (iframes and framesets, but *same domain* only) forms.
 
 ## Form element support for autofilling
 ### Input Types
